@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textPersonName"
+        android:ems="10"
+        android:id="@+id/txtFirstName"
+        android:hint="@string/first_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="5dp"
+        android:layout_alignRight="@+id/txtLastName"
+        android:layout_alignEnd="@+id/txtLastName"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textPersonName"
+        android:ems="10"
+        android:id="@+id/txtLastName"
+        android:hint="@string/last_name"
+        android:layout_below="@+id/txtFirstName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="5dp"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_new_fencer"
+        android:id="@+id/btnAddFencer"
+        android:minHeight="70dp"
+        android:paddingLeft="10dp"
+        android:onClick="onUpdateFencer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/txtClub"
+        android:hint="@string/club"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/txtLastName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:editable="true"
+        android:inputType="text|textCapWords"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/tbHand"
+        android:textOff="@string/right_hand"
+        android:textOn="@string/left_hand"
+        android:checked="false"
+        android:layout_below="@+id/spWeapon"
+        android:layout_toRightOf="@+id/tbGender"
+        android:layout_toEndOf="@+id/tbGender" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:id="@+id/spWeapon"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/txtRating"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtBirthYear"
+        android:hint="@string/birth_year"
+        android:padding="10dp"
+        android:layout_below="@+id/txtCountry"
+        android:layout_alignRight="@+id/btnAddFencer"
+        android:layout_alignEnd="@+id/btnAddFencer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/tbGender"
+        android:textOff="@string/boy"
+        android:textOn="@string/girl"
+        android:checked="false"
+        android:layout_below="@+id/spWeapon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_pool"
+        android:id="@+id/cbAddtoPool"
+        android:checked="true"
+        android:layout_below="@+id/tbHand"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCountry"
+        android:layout_below="@+id/txtClub"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnAddFencer"
+        android:layout_alignEnd="@+id/btnAddFencer"
+        android:hint="@string/country"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/txtRating"
+        android:hint="@string/rating_points"
+        android:paddingLeft="5dp"
+        android:editable="true"
+        android:inputType="text|textCapWords"
+        android:padding="10dp"
+        android:layout_below="@+id/txtBirthYear"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnAddFencer"
+        android:layout_alignEnd="@+id/btnAddFencer" />
+
+</RelativeLayout>

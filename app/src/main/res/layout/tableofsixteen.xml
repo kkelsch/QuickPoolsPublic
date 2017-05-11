@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="*"
+        android:shrinkColumns="*"
+        android:id="@+id/tlPool"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tb16TV"
+        android:layout_above="@+id/tb16Next"
+        android:paddingLeft="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(1) BYE"
+                android:id="@+id/tb16pos1"
+                android:onClick="oneVersusSixteen"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/spacertxt1"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:background="@drawable/toprightborder"
+                android:id="@+id/spacertxt2"
+                android:onClick="oneVersusSixteen"
+                android:textIsSelectable="false"
+                android:textSize="10dp"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bottomborder"
+                android:id="@+id/tb16win1v16"
+                android:layout_column="1"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(16) BYE"
+                android:id="@+id/tb16pos2"
+                android:background="@drawable/bottomrightborder"
+                android:onClick="oneVersusSixteen"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/tb16_1v16score"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:text=" "
+                android:id="@+id/spacertxt3"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(8) BYE"
+                android:id="@+id/tb16pos3"
+                android:onClick="eightVersusNine"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/spacertxt4"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/toprightborder"
+                android:id="@+id/textView"
+                android:onClick="eightVersusNine"
+                android:textIsSelectable="false"
+                android:textSize="10dp"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:background="@drawable/bottomborder"
+                android:id="@+id/tb16win8v9"
+                android:layout_column="1"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(9) BYE"
+
+                android:id="@+id/tb16pos4"
+                android:background="@drawable/bottomrightborder"
+                android:onClick="eightVersusNine"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:id="@+id/tb16_8v9score"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" "
+                android:id="@+id/textView4"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(5) BYE"
+                android:id="@+id/tb16pos5"
+                android:onClick="fiveVersusTwelve"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView7"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:background="@drawable/toprightborder"
+                android:id="@+id/textView8"
+                android:onClick="fiveVersusTwelve"
+                android:textIsSelectable="false"
+                android:textSize="10dp"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:background="@drawable/bottomborder"
+                android:id="@+id/tb16win5v12"
+                android:layout_column="1"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(12) BYE"
+                android:id="@+id/tb16pos6"
+                android:background="@drawable/bottomrightborder"
+                android:onClick="fiveVersusTwelve"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/tb16_5v12score"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:text=" "
+                android:id="@+id/textView6"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(4) BYE"
+                android:id="@+id/tb16pos7"
+                android:onClick="fourVersusThirteen"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView10"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:background="@drawable/toprightborder"
+                android:id="@+id/textView12"
+                android:onClick="fourVersusThirteen"
+                android:textIsSelectable="false"
+                android:textSize="10dp"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:background="@drawable/bottomborder"
+                android:id="@+id/tb16win4v13"
+                android:layout_column="1"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(13) BYE"
+                android:id="@+id/tb16pos8"
+                android:background="@drawable/bottomrightborder"
+                android:onClick="fourVersusThirteen"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/tb16_4v13score"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView3"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(6) BYE"
+                android:id="@+id/tb16pos9"
+                android:onClick="sixVersusEleven"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView9"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/toprightborder"
+                android:id="@+id/textView11"
+                android:onClick="sixVersusEleven"
+                android:textIsSelectable="false"
+                android:textSize="11dp"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bottomborder"
+                android:id="@+id/tb16win6v11"
+                android:layout_column="1"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(11) BYE"
+                android:id="@+id/tb16pos10"
+                android:background="@drawable/bottomrightborder"
+                android:onClick="sixVersusEleven"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/tb16_6v11score"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:id="@+id/textView13"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(3) BYE"
+                android:id="@+id/tb16pos11"
+                android:onClick="threeVersusFourteen"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView14"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/toprightborder"
+                android:id="@+id/textView_sp"
+                android:onClick="threeVersusFourteen"
+                android:textIsSelectable="false"
+                android:textSize="11dp"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bottomborder"
+                android:id="@+id/tb16win3v14"
+                android:layout_column="1"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(14) BYE"
+                android:id="@+id/tb16pos12"
+                android:background="@drawable/bottomrightborder"
+                android:onClick="threeVersusFourteen"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/tb16_3v14score"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView_sps"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(7) BYE"
+                android:id="@+id/tb16pos13"
+                android:onClick="sevenVersusTen"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView16"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/toprightborder"
+                android:id="@+id/textView15"
+                android:onClick="sevenVersusTen"
+                android:textSize="11dp"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bottomborder"
+                android:id="@+id/tb16win7v10"
+                android:layout_column="1"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/tb16pos14"
+                android:background="@drawable/bottomrightborder"
+                android:text="(10) BYE"
+                android:onClick="sevenVersusTen"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/tb16_7v10score"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView_17"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(2) BYE"
+                android:id="@+id/tb16pos15"
+                android:onClick="twoVersusFifteen"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView18"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/toprightborder"
+                android:id="@+id/textView17"
+                android:onClick="twoVersusFifteen"
+                android:textSize="11dp"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bottomborder"
+                android:id="@+id/tb16win2v15"
+                android:layout_column="1"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="(15) BYE"
+                android:id="@+id/tb16pos16"
+                android:background="@drawable/bottomrightborder"
+                android:onClick="twoVersusFifteen"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/tb16_2v15score"
+                android:textSize="11dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:id="@+id/tb16Next"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onNextTableofSixteen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/table_of_sixteen"
+        android:id="@+id/tb16TV"
+        android:layout_column="0"
+        android:paddingLeft="2dp" />
+
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:id="@+id/bout_sheet"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:windowActionBar="false"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="hss.quickpool.bout"
+    android:weightSum="1"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/fencer_a"
+        android:id="@+id/tvName1"
+        android:maxLines="1"
+        android:clickable="false"
+        android:background="#0000"
+        android:textSize="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/tvSpacer"
+        android:phoneNumber="true"
+        android:gravity="left"
+        android:layout_toLeftOf="@+id/tvSpacer" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/fencer_b"
+        android:id="@+id/tvName2"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:clickable="false"
+        android:background="#0000"
+        android:textSize="14dp"
+        android:gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnFinished"
+        android:layout_alignEnd="@+id/btnFinished"
+        android:layout_toEndOf="@+id/card2"
+        android:layout_alignLeft="@+id/card2"
+        android:layout_alignStart="@+id/card2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/tvScore1"
+        android:minHeight="70dp"
+        android:minWidth="30dp"
+        android:textSize="60dp"
+        android:layout_below="@+id/btn1Plus"
+        android:layout_alignLeft="@+id/btn1Plus"
+        android:layout_alignStart="@+id/btn1Plus"
+        android:layout_alignRight="@+id/tvName1"
+        android:layout_alignEnd="@+id/tvName1"
+        android:paddingLeft="7dp" />
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btn1Plus"
+        android:onClick="onBtn1PlusClick"
+        android:background="#0000"
+        android:layout_below="@+id/tvName1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/up" />
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/btn1Minus"
+        android:onClick="onBtn1MinusClick"
+        android:layout_below="@+id/tvScore1"
+        android:layout_alignLeft="@+id/tvScore1"
+        android:layout_alignStart="@+id/tvScore1"
+        android:background="#0000"
+        android:src="@drawable/down" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/tvScore2"
+        android:minHeight="70dp"
+        android:minWidth="30dp"
+        android:textSize="60dp"
+        android:layout_below="@+id/btn2Plus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/tvName2"
+        android:layout_alignStart="@+id/tvName2"
+        android:gravity="right"
+        android:paddingRight="8dp" />
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btn2Plus"
+        android:onClick="onBtn2PlusClick"
+        android:nestedScrollingEnabled="false"
+        android:background="#0000"
+        android:layout_above="@+id/tvScore1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/up" />
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/btn2Minus"
+        android:onClick="onBtn2MinusClick"
+        android:background="#0000"
+        android:layout_below="@+id/tvScore2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/down" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_timer"
+        android:id="@+id/btnReset"
+        android:onClick="onTimerReset"
+        android:nestedScrollingEnabled="false"
+        android:layout_below="@+id/btn1Minus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombg"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="3:00"
+        android:id="@+id/tvTimer"
+        android:textSize="80dp"
+        android:gravity="center"
+        android:onClick="onTimerTap"
+        android:minWidth="150dp"
+        android:minHeight="100dp"
+
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btnReset"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finished"
+        android:id="@+id/btnFinished"
+        android:clickable="true"
+        android:onClick="onFinish"
+        android:layout_above="@+id/tvTimer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_"
+        android:minHeight="30dp"
+        android:minWidth="30dp"
+        android:id="@+id/card1"
+        android:background="#ffa9a9a9"
+        android:clickable="true"
+        android:onClick="onCardOneClick"
+        android:layout_alignTop="@+id/card2"
+        android:layout_toLeftOf="@+id/tvSpacer"
+        android:layout_toStartOf="@+id/tvSpacer"
+        android:layout_alignBottom="@+id/btn1Plus" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_"
+        android:id="@+id/card2"
+        android:minHeight="30dp"
+        android:minWidth="30dp"
+        android:background="#ffa9a9a9"
+        android:onClick="onCardTwoClick"
+        android:layout_below="@+id/tvName2"
+        android:layout_toRightOf="@+id/tvSpacer"
+        android:layout_toEndOf="@+id/tvSpacer"
+        android:layout_above="@+id/tvScore2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="       "
+        android:id="@+id/tvSpacer"
+        android:layout_above="@+id/btn2Plus"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+</RelativeLayout>

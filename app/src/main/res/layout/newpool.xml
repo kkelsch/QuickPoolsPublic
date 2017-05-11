@@ -1,0 +1,77 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:windowActionBar="false"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/start_a_new_pool"
+        android:id="@+id/textView2" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:text="@string/saved_fencers"
+            android:id="@+id/btnSavedFencers"
+            android:onClick="showSavedFencers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:text="@string/new_fencer"
+            android:id="@+id/btnNewFencer"
+            android:paddingTop="10dp"
+            android:onClick="showNewFencerForm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+
+            android:text="@string/clear"
+            android:id="@+id/btnClearList"
+            android:onClick="clearPoolList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </TableRow>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="248dp"
+        android:id="@+id/listViewNames"
+        android:focusable="true"
+        android:layout_weight="1"
+        android:layout_below="@+id/btnClearList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/start_pool"
+        android:id="@+id/btnStartPool"
+        android:minHeight="70dp"
+        android:onClick="onNewPool"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</TableLayout>

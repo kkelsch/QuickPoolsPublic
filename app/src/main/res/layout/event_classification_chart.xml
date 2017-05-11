@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:stretchColumns="*"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@color/button_material_light"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="Event"
+                android:textColor="#0000"
+                android:id="@+id/txthead1"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="Min #"
+                android:id="@+id/txthead2"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="Min Rated"
+                android:id="@+id/txtheader3"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="Rated Results"
+                android:id="@+id/txtheader4"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/customblackborder"
+                android:layout_weight="1"
+                android:text="Ratings Awarded"
+                android:id="@+id/txtheader5"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="E1"
+                android:id="@+id/txtE1_1"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="6"
+                android:id="@+id/txtE1_2"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="None"
+                android:id="@+id/txtE1_3"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="N/A"
+                android:id="@+id/txtE1_4"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/customblackborder"
+                android:layout_weight="1"
+                android:text="1 E"
+                android:id="@+id/txtE1_5"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@color/button_material_light"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="D1"
+                android:id="@+id/txtD1_1"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="15"
+                android:id="@+id/txtD1_2"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="4 E&apos;s"
+                android:id="@+id/txtD1_3"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:maxLines="10"
+                android:text="2 E&apos;s in top 8"
+                android:id="@+id/txtD1_4"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/customblackborder"
+                android:layout_weight="1"
+                android:text="1 D \n 2-4 E"
+                android:id="@+id/txtD1_5"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="C1"
+                android:id="@+id/txtC1_1"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="15"
+                android:id="@+id/txtC1_2"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="2 C&apos;s, 2 D&apos;s, 2 E&apos;s"
+                android:id="@+id/txtC1_3"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:maxLines="10"
+                android:text="2 C&apos;s &amp; 2 D&apos;s in top 8"
+                android:id="@+id/txtC1_4"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/customblackborder"
+                android:layout_weight="1"
+                android:text="1 D \n 2-4 E"
+                android:id="@+id/txtC1_5"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="C2"
+                android:id="@+id/txtC2_1"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="25"
+                android:id="@+id/txtC2_2"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="4 D&apos;s, 4 E&apos;s"
+                android:id="@+id/txtC2_3"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:maxLines="10"
+                android:text="4 D&apos;s in top 8"
+                android:id="@+id/txtC2_4"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/customblackborder"
+                android:layout_weight="1"
+                android:text="1 C \n 2-4 D\n5-8 E"
+                android:id="@+id/txtC2_5"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="B1"
+                android:id="@+id/txtB1_1"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="15"
+                android:id="@+id/txtB1_2"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="2 B&apos;s, 2 C&apos;s, 2 D&apos;s"
+                android:id="@+id/txtB1_3"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:maxLines="10"
+                android:text="2 B&apos;s &amp; 2 C&apos;s \nin top 8"
+                android:id="@+id/txtB1_4"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/customblackborder"
+                android:layout_weight="1"
+                android:text="1 B \n 2-4 C\n 5-6 D\n 7-8 E"
+                android:id="@+id/txtB1_5"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@color/button_material_light"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="B2"
+                android:id="@+id/txtB2_1"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="25"
+                android:id="@+id/txtB2_2"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="2 B&apos;s, 2 C&apos;s, 2 D&apos;s"
+                android:id="@+id/txtB2_3"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:maxLines="10"
+                android:text="2 B&apos;s &amp; 2 C&apos;s \nin top 8"
+                android:id="@+id/txtB2_4"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/customblackborder"
+                android:layout_weight="1"
+                android:text="1 B \n 2-4 C\n 5-8 D\n 9-12 E"
+                android:id="@+id/txtB2_5"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="A1"
+                android:id="@+id/txtA1_1"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="15"
+                android:id="@+id/txtA1_2"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="2 A&apos;s, 2 B&apos;s, 2 C&apos;s"
+                android:id="@+id/txtA1_3"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:maxLines="10"
+                android:text="2 A&apos;s &amp; 2 B&apos;s \nin top 8"
+                android:id="@+id/txtA1_4"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/customblackborder"
+                android:layout_weight="1"
+                android:text="1 A \n2 B \n 3-4 C\n 5-6 D\n 7-8 E"
+                android:id="@+id/txtA1_5"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@color/button_material_light"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="A2"
+                android:id="@+id/txtA2_1"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="25"
+                android:id="@+id/txtA2_2"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:text="2 A&apos;s, 2 B&apos;s, 2 C&apos;s"
+                android:id="@+id/txtA2_3"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customblackborder"
+                android:maxLines="10"
+                android:text="2 A&apos;s &amp; 2 B&apos;s \nin top 8"
+                android:id="@+id/txtA2_4"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/customblackborder"
+                android:layout_weight="1"
+                android:text="1 A \n2-4 B \n 5-8 C\n 9-10 D\n 11-12 E"
+                android:id="@+id/txtA2_5"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:gravity="center" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

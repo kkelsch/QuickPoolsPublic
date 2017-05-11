@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onDone">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/listviewCB"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/btnFinished"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:id="@+id/btnFinished"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onDone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:id="@+id/btnClearFencerSelection"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="clearSelection" />
+
+</RelativeLayout>

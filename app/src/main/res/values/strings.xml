@@ -1,0 +1,185 @@
+<resources>
+    <string name="app_name">QuickPools</string>
+    <string name="no_notes">No Notes Yet</string>
+    <string name="notes">Notes</string>
+    <string name="no_Title">No Title</string>
+    <string name="add_note">Add Note</string>
+    <string name="menu_delete">Delete Note</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="left_hand">Left Handed</string>
+    <string name="right_hand">Right Handed</string>
+    <string name="add_to_pool">Add to new pool</string>
+    <string name="no_fencers">No saved fencers yet.</string>
+    <string name="fencer_edit">Edit Fencer</string>
+    <string name="save_to_database">Save Results to Database?</string>
+    <string name="bouts_already_saved">Bouts Already Saved to Database</string>
+
+
+    <!-- Single Words -->
+    <string name="yes">Yes</string>
+    <string name="saved">Saved</string>
+    <string name="no">No</string>
+    <string name="none">None</string>
+    <string name="girl">Female</string>
+    <string name="boy">Male</string>
+    <string name="title">Title</string>
+    <string name="body">Body</string>
+    <string name="done">Done</string>
+    <string name="saber">Saber</string>
+    <string name="foil">Foil</string>
+    <string name="epee">Epee</string>
+
+    <string name="iconSource" translatable="false">"http://icons8.com/web-app/4022/Todo-List"</string>
+
+    <!-- Bout Sheet &  card showing-->
+    <string name="showCards">Display Cards When Given</string>
+    <string name="hideCards">Don\'t Display Cards When Given</string>
+    <string name="resetTimer">Reset Timer</string>
+    <string name="setTimerValue">Set Timer To:</string>
+    <string name="flipFencers">Flip Fencers</string>
+    <string name="flipCoin">Flip A Coin</string>
+    <string name="duplicateScore">Duplicate Score</string>
+    <string name="whoWon">Who Won?</string>
+
+    <!-- Coin Flip-->
+    <string name="flip">Flip</string>
+    <string name="left_upper">LEFT</string>
+    <string name="right_upper">RIGHT</string>
+
+    <!-- Fencer Checkbox List-->
+    <string name="zero_fencers_saved">Zero Fencers Saved</string>
+    <string name="too_many_fencers">Too Many Fencers</string>
+    <string name="max_fencers_allowed">A maximum of 12 fencers allowed.</string>
+
+    <!-- Fencer List-->
+    <string name="fencer_insert">Add Fencer</string>
+    <string name="fencer_delete">Delete Fencer</string>
+    <string name="fencer_delete_all">Delete All Fencers</string>
+    <string name="fencer_delete_all_long">Delete All Fencers and Their Histories</string>
+    <string name="fencer_delete_all_history">Delete History For All Fencers</string>
+    <string name="fencer_delete_all_history_long">Delete All Fencers\' Histories</string>
+    <string name="confirm_action">Are you certain? This action cannot be undone.</string>
+    <string name="fencer_db_cleared">Fencer Database Cleared.</string>
+    <string name="history_db_cleared">History Database Cleared.</string>
+
+    <!-- Final Results-->
+    <string name="finished_DEs">Finished DE\'s</string>
+
+    <!-- New Fencer-->
+    <string name="save_new_fencer">Save New Fencer</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="empty_fencer">Blank Fencer</string>
+    <string name="invalid_name">Invalid Fencer Name</string>
+    <string name="unrated">Unrated</string>
+    <string name="duplicate_fencer">Duplicate Fencer</string>
+    <string name="fencer_exists">Fencer already exists</string>
+
+    <!-- New Pool-->
+    <string name="empty_pool">Pool is Empty</string>
+    <string name="quick_bout">Quick Pool Bout</string>
+    <string name="reorder_list">Reorder Pool</string>
+    <string name="de_quick_bout">Quick DE Bout</string>
+    <string name="event_chart">USFA Event Ratings Chart</string>
+    <string name="too_few_fencers">Too Few Fencers</string>
+    <string name="zero_fencers_in_pool">Zero Fencers in Pool</string>
+
+    <!-- Past Bouts-->
+    <string name="pool_scores"> Pool Scores</string>
+    <string name="DE_scores"> DE Scores</string>
+    <string name="average_score">Average Score</string>
+    <string name="percentage_Victory">Percentage Victory</string>
+    <string name="zero_bouts_fenced">Zero Bouts Fenced</string>
+
+    <!-- Pool Sheet-->
+    <string name="discard_pool">Discard Pool</string>
+    <string name="unfinished_pool">Unfinished Pool</string>
+    <string name="finished_pool">Finished Pool</string>
+    <string name="not_all_bouts_fenced">Not All Bouts Have Been Fenced</string>
+    <string name="name">Name</string>
+    <string name="export_pool">Export Pool</string>
+
+    <!-- Select Certain Fencer-->
+    <string name="all_bouts_with">All Bouts With </string>
+
+    <!-- Tables-->
+    <string name="discard_table">Discard Table</string>
+    <string name="see_current_standings">See Current Places</string>
+    <string name="BYE">BYE</string>
+    <string name="table_not_finished">Table Not Completed</string>
+
+
+    <!-- View Fencer Stats-->
+    <string name="view_all_Pool_bouts">View All Pool Bouts</string>
+    <string name="view_all_de_bouts">View All DE Bouts</string>
+    <string name="view_history_certain_opponent">History with Certain Opponent</string>
+    <string name="weapon">Weapon</string>
+    <string name="gender">Gender</string>
+    <string name="birth_year">Birthyear</string>
+    <string name="rating">Rating</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="hand">Hand</string>
+    <string name="club">Club</string>
+    <string name="country">Country</string>
+    <string name="pools">Pools:</string>
+    <string name="DEs">DEs:</string>
+    <string name="total_yellow_cards">Total Yellow Cards</string>
+    <string name="total_red_cards">Total Red Cards</string>
+    <string name="total_num_bouts">Total Number of Bouts</string>
+    <string name="total_num_victories">Total Number of Victories</string>
+    <string name="avg_bout_score">Average Bout Score</string>
+    <string name="erase_fencer_history">Erase Fencer\'s History</string>
+    <string name="deleted">Deleted</string>
+    <string name="view_past">View Past</string>
+
+
+    <!-- Layouts-->
+    <string name="finished">Finished</string>
+
+    <!-- bout_sheet-->
+    <string name="reset_timer">Reset Timer</string>
+    <string name="fencer_a">Fencer Left</string>
+    <string name="fencer_b">Fencer Right</string>
+
+    <!-- checkboxlist-->
+    <string name="clear">Clear Selection</string>
+
+    <!-- finalresults-->
+    <string name="save_to_db">Save to Database</string>
+    <string name="final_results">Final Results:</string>
+
+    <!-- newfencer-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="rating_points">Rating or Points</string>
+
+    <!-- newpool-->
+    <string name="saved_fencers">Saved Fencers</string>
+    <string name="start_a_new_pool">Start a new pool:</string>
+    <string name="new_fencer">New Fencer</string>
+    <string name="start_pool">Start Pool</string>
+
+    <!-- poolresults-->
+    <string name="direct_elimination">Direct Eliminations</string>
+    <string name="pool_results">Pool Results:</string>
+
+    <!-- reorderlist-->
+    <string name="select_a_reorder_fencer">Select a Fencer to Reorder:</string>
+
+    <!-- selectcertainfencer-->
+    <string name="view">View</string>
+    <string name="view_DEs">View DEs</string>
+    <string name="view_pools">View Pools</string>
+    <string name="select_a_fencer">Select A Fencer:</string>
+
+    <!-- Tables-->
+    <string name="table_of_eight">Table Of 8:</string>
+    <string name="next">Next</string>
+    <string name="table_of_four">Table Of 4:</string>
+    <string name="table_of_sixteen">Table Of 16:</string>
+    <string name="table_of_two">Finals:</string>
+
+
+</resources>
+
+
