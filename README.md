@@ -20,7 +20,13 @@ Here is the current wish list of things to happen for the application that are n
   * It doesn't seem to be handling left handed folks like it should. Needs more debugging
 * UI Changes
   * Make it easier to use on newer, bigger phones
-  
+
+
   
   
 The list, of course, if not complete. If you have any comments or things you would like to add-on, please email Kat at codekatdroid@gmail.com. 
+
+
+**Pull Requests**
+
+Please follow good branching practices prior to pushing code back up into the master branch. If you need experience on what that is, please check out this link [here](http://nvie.com/posts/a-successful-git-branching-model/).
