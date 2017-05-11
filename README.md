@@ -7,6 +7,8 @@ This is the repo for the [QuickPools Android App](https://play.google.com/store/
 
 Warning! I wrote this application as a way to learn software on my own. As a result, it has a lot of... not so great practices that I know about now and don't have the time to update and/or change. Be prepared!
 
+This project assumes that you have basic knowledge of Android Studio and Java programming. 
+
 Here is the current wish list of things to happen for the application that are not currently implemented. 
 
 **QuickPools Wish List**
